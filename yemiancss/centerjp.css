@@ -1,0 +1,293 @@
+body{
+    /*background-color: #ffffff;*/
+}
+.headtab{
+    width: 100%;
+    height: 1.40625rem;
+    background-color: #ffffff;
+}
+
+.tab1,.tab2,.tab3{
+    width: 3.333333333333333rem;
+    text-align: center;
+    line-height:1.40625rem;
+    font-size: 125%;
+    color: #3d3d3d;
+}
+
+.selected{
+    border-bottom: 0.078125rem solid #ec132b;
+    color: #eb122c;
+    font-weight: bold;
+}
+
+.tab1,.tab2{
+    border-right: 1px solid #f0f0f0;
+}
+
+.hongbaohead{
+    height: 1.46875rem;
+    width: 100%;
+    background-color: #efefef;
+    font-size: 125%;
+    color: #000000;
+    text-align: center;
+    line-height: 1.46875rem;
+}
+
+.subselect{
+    color: #eb122c;
+    font-weight: bold;
+}
+
+.lingqucontent>div{
+
+}
+
+.tipbottom>div{
+    font-size: 100%;
+    line-height: 1.5;
+}
+.tipbottom{
+    width: 100%;
+    margin-top: 2.03125rem;
+    margin-bottom: 0.46875rem;
+    padding-left: 0.625rem;
+    padding-right: 0.9375rem;
+    font-size: 100%;
+    height: auto;
+    color: #c8c8c8;
+    /*line-height: 1.5;*/
+}
+
+.tipbottompo{
+    position: absolute;
+    bottom: 0.46875rem;
+    width: 100%;
+    padding-left: 0.625rem;
+    padding-right: 0.9375rem;
+    font-size: 100%;
+    color: #c8c8c8;
+    height: auto;
+    /*line-height: 1.5;*/
+}
+
+.tipbottompo>div{
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+.hongbaocont{
+    width: 100%;
+}
+
+.hongbaolistlq{
+    width: 100%;
+    height:1.40625rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dfdfdf;
+    font-size: 108.3333333333333%;
+    color: #3d3d3d;
+}
+
+.jiesuanqu
+{
+    height: 2.03125rem;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.jiesuanbtn{
+    width: 2.09375rem;
+    height: 0.84375rem;
+    background-color: #eb122c;
+    border-radius: 0.2rem;
+    text-align: center;
+    line-height: 0.84375rem;
+    font-size: 100%;
+    color: #ffffff;
+    margin-top: 0.25rem;
+    margin-left: 0.1875rem;
+    margin-right: 0.59375rem;
+}
+
+.jiesunbefore{
+    padding-top: 0.375rem;
+    font-size: 125%;
+    color: #494848;
+}
+.jifentip{
+    background-color: #ffffff;
+    width: 100%;
+    height: 1.71875rem;
+    margin-top: 0.125rem;
+}
+
+.keyongjfen{
+    width: 2.09375rem;
+    height: 0.84375rem;
+    background-color: #eb122c;
+    border-radius: 0.2rem;
+    text-align: center;
+    line-height: 0.84375rem;
+    font-size: 100%;
+    color: #ffffff;
+    margin-right: 0.9375rem;
+}
+
+.keyongjfenfont{
+    line-height: 1.71875rem;
+    text-align: right;
+    padding-right: 1.21875rem;
+    font-size: 125%;
+    color: #3d3d3d;
+}
+
+.myjfsubtab{
+    width: 100%;
+    height: 1.40625rem;
+    color: #3d3d3d;
+    font-size: 125%;
+    text-align: center;
+    line-height: 1.40625rem;
+}
+
+.jftypeliest{
+    width: 100%;
+    height:1.4375rem;
+    border-bottom: 1px solid #dfdfdf;
+    font-size: 100%;
+    color: #5c5c5c;
+    line-height: 1.421875rem;
+}
+
+.myjptab{
+    height: 1.46875rem;
+    width: 100%;
+    background-color: #efefef;
+    font-size: 125%;
+    color: #000000;
+    text-align: center;
+    line-height: 1.46875rem;
+}
+
+.myjptablqlist {
+    width: 100%;
+    height: 4.1875rem;
+    background-color: #ffffff;
+}
+
+.myjptablqlistbt{
+    height: 1.28125rem;
+    width: 100%;
+    border-top: 1px solid #dfdfdf;
+}
+
+.myjptablqlistbtn{
+    width: 1.90625rem;
+    height: 0.75rem;
+    border: 1px solid #eb122c;
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.375rem;
+    right:0.6875rem;
+    font-size: 100%;
+    text-align: center;
+    line-height:0.71875rem;
+    color: #eb122c;
+}
+
+.myjpimg{
+    width: 2.0625rem;
+    background-image: url("../sucai/p1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 0.3125rem;
+}
+
+.hongbaotip{
+    width: 6.3125rem;
+    height:4.65625rem;
+    border-radius: 0.3rem;
+    background-color: #FFFFFF;
+}
+
+.hongbaotipbtn{
+    width: 4.375rem;
+    height: 1.25rem;
+    background-color: #eb122c;
+    text-align: center;
+    line-height: 1.25rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.tip1hb,.tip2hb{
+    text-align: center;
+    font-weight: bold;
+    color: #0b0b0b;
+    font-size: 125%;
+}
+
+.tip1hb{
+    padding-top: 0.9375rem;
+}
+
+.tip2hb{
+    padding-top: 0.3125rem;
+}
+
+.jftcctip{
+    width: 7.4375rem;
+    height: 6.203125rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.jftcctip1{
+    width: 5.4375rem;
+    height: 4.203125rem;
+    background-image: url(../sucai/quankong.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.dateimgs{
+    width: 0.5625rem;
+    height: 0.5635rem;
+    margin-right: 0.5625rem;
+
+}
+
+.dateimgs>label{
+    display: block;
+    background-image: url("../image/date.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.dateimgsend{
+    width: 0.5625rem;
+    height: 0.5635rem;
+    margin-right: 0.5625rem;
+
+}
+
+.dateimgsend>label{
+    display: block;
+    background-image: url("../image/date.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}

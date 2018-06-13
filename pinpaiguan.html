@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>康师傅码上有礼</title>
+    <script>
+        !function (e) {
+            function t() {
+                var t = r.getBoundingClientRect().width;
+                /T5\//.test(e.navigator.userAgent) && (t = Math.floor(e.screen.width / e.devicePixelRatio)), t / l > 540 && (t = 540 * l);
+                var i = t / 10;
+                r.style.fontSize = i + "px", m.rem = e.rem = i
+            }
+
+            var i, a = e.document, r = a.documentElement, n = a.querySelector('meta[name="viewport"]'), o = a.querySelector('meta[name="flexible"]'), l = 0, s = 0, m = e.flexible || (e.flexible = {}), d = / baiduboxapp\//i.test(e.navigator.userAgent);
+            if (n) {
+                var p = n.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                p && (s = parseFloat(p[1]), l = parseInt(1 / s))
+            } else if (o) {
+                var c = o.getAttribute("content");
+                if (c) {
+                    var u = c.match(/initial\-dpr=([\d\.]+)/), f = c.match(/maximum\-dpr=([\d\.]+)/);
+                    u && (l = parseFloat(u[1]), s = parseFloat((1 / l).toFixed(2))), f && (l = parseFloat(f[1]), s = parseFloat((1 / l).toFixed(2)))
+                }
+            }
+            if (!l && !s) {
+                var v = (e.navigator.appVersion.match(/android/gi), e.navigator.appVersion.match(/iphone/gi)), h = e.devicePixelRatio;
+                l = v ? h >= 3 && (!l || l >= 3) ? 3 : h >= 2 && (!l || l >= 2) ? 2 : 1 : 1, s = 1 / l
+            }
+            if (r.setAttribute("data-dpr", l), !n)if (n = a.createElement("meta"), n.setAttribute("name", "viewport"), n.setAttribute("content", "initial-scale=" + s + ", maximum-scale=" + s + ", minimum-scale=" + s + ", user-scalable=no"), r.firstElementChild)r.firstElementChild.appendChild(n);
+            else {
+                var x = a.createElement("div");
+                x.appendChild(n), a.write(x.innerHTML)
+            }
+            d || e.addEventListener("resize", function () {
+                clearTimeout(i), i = setTimeout(t, 300)
+            }, !1), e.addEventListener("pageshow", function (e) {
+                e.persisted && (clearTimeout(i), i = setTimeout(t, 300))
+            }, !1), "complete" === a.readyState ? a.body.style.fontSize = 12 * l + "px" : a.addEventListener("DOMContentLoaded", function () {
+                a.body.style.fontSize = 12 * l + "px"
+            }, !1), t(), m.dpr = e.dpr = l, m.refreshRem = t, m.rem2px = function (e) {
+                var t = parseFloat(e) * this.rem;
+                return "string" == typeof e && e.match(/rem$/) && (t += "px"), t
+            }, m.px2rem = function (e) {
+                var t = parseFloat(e) / this.rem;
+                return "string" == typeof e && e.match(/px$/) && (t += "rem"), t
+            }
+        }(window);
+    </script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link type="text/css" href="css/comm.css" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="kiben" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title></title>
+    <script type="text/javascript">
+        document.write("<script type='text/javascript' src='util/configc.js?v=" + Math.random() + "'><\/script>")
+    </script>
+    <script type="text/javascript">
+        document.write("<link rel='stylesheet' href='yemiancss/pinpaiguan.css?v=" + version + "'>");
+    </script>
+    <style>
+        body{
+            overflow: hidden;
+            line-height: 1;
+        }
+        .banner {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 0px;
+        }
+
+        .banner img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .main_image {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .main_image ul {
+            width: 9999px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+
+        .main_image li {
+            float: left;
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: #FFFFFF;
+        }
+
+        .main_image_s {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .main_image_s ul {
+            width: 9999px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+
+        .main_image_s li {
+            float: left;
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: #FFFFFF;
+        }
+
+        .main_image_s li img{
+            display: block;
+            width: 100%;
+        }
+
+        .select{
+            color: #eb122c;
+        }
+
+        .fnt{
+            line-height: 1.09375rem;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container bx bxv" style="">
+    <div class="main_visual banner" style="position: relative;">
+        <div class="flicking_con" style="margin-left: -20.5px;"><a href="#" class=""></a><a href="#" class="on"></a>
+        </div>
+        <div class="main_image" style="">
+            <ul id="superBanners" style="width: 640px; overflow: visible;">
+                <li style="float: none; display: block; position: absolute; top: 0px; left: -640px; width: 640px;" class="bx bxv">
+                    <img src="image/8.jpg">
+                </li>
+                <li style="float: none; display: block; position: absolute; top: 0px; left: 0px; width: 640px;" class="bx bxv">
+                    <img src="image/8.jpg">
+                </li>
+            </ul>
+            <a href="javascript:;" id="btn_prev" style="width: 640px; overflow: visible;"></a>
+            <a href="javascript:;" id="btn_next" style="width: 640px; overflow: visible;"></a>
+        </div>
+    </div>
+    <div class="w1 bx bxh" style="height:1.09375rem;background-color: #f2f2f2;font-size: 100%;color: #212121">
+        <div id="itemm1" class="bxf1 fnt select">企业咨询</div>
+        <div id="itemm2" class="bxf1 fnt">企业咨询</div>
+        <div id="itemm3" class="bxf1 fnt">企业咨询</div>
+        <div id="itemm4" class="bxf1 fnt">企业咨询</div>
+        <div id="itemm5" class="bxf1 fnt">企业咨询</div>
+    </div>
+    <div class="bxf1 w1" id="sc" style="overflow: scroll;">
+        <div id="item1" class="bxf1 w1" style="">
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨天津</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="item2" class="bxf1 w1" style="display: none;">
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨上海</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="item3" class="bxf1 w1" style="display: none;">
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨广州</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨广州</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨广州</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨广州</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="item4" class="bxf1 w1" style="display: none;">
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨北京</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨北京</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨北京</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨北京</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="item5" class="bxf1 w1" style="display: none;">
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨深圳</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨深圳</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨深圳</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+            <div class="lists bx bxh" style="box-sizing:border-box;">
+                <div class="lists-sub">
+                    <img src="">
+                </div>
+                <div class="bxf1 h1 bx bxv" style="padding-left: 0.4rem;padding-top:0.46875rem;margin-right: 0.625rem;box-sizing: border-box;">
+                    <div class="w1 break_main" style="font-size: 100%;color:#212121;">渤海之滨深圳</div>
+                    <div class="w1 hanshuxianshi" style="line-height:1.3;padding-top: 0.1875rem;font-size: 83.3333333%;color:#8b8b8b;word-break: break-all;box-sizing: border-box;">
+                        渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨天津渤海之滨冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛冯赛的冯赛冯赛
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="zepto/jquery.min.js"></script>
+<script type="text/javascript" src="util/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="util/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="util/comm.js"></script>
+<script type="text/javascript" src="util/MD5.js"></script>
+<script type="text/javascript" src="util/iscroll.js"></script>
+<script type="text/javascript">
+    document.write("<script type='text/javascript' src='yemianjs/pinpaiguan.js?v=" + version + "'><\/script>")
+</script>
+</html>

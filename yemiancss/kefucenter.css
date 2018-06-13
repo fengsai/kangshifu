@@ -1,0 +1,34 @@
+.headtip{
+    width: 100%;
+    height: 2rem;
+    font-size: 116.6666666666667%;
+    color: #eb122c;
+}
+
+.kflist{
+    width: 100%;
+    height: 1.71875rem;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.imgs{
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 50%;
+    margin-left: 0.4375rem;
+}
+
+.imgs>img{
+    display: block;
+    width: 100%;
+}
+
+.fongtype{
+    font-size: 125%;
+    color: #343434;
+}
+
+.fongtext{
+    font-size:116.6666666666667%;
+    color: #888888;
+}

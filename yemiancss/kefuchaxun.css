@@ -1,0 +1,71 @@
+.headtab{
+    width: 100%;
+    height: 1.46875rem;
+}
+
+.linekefu{
+    height: 100%;
+    width:0.0625rem;
+    background-color: #f3f3f3;
+}
+.linekexia{
+    height: 0.0625rem;
+    width:100%;
+    background-color: #f3f3f3;
+}
+
+.tab{
+     text-align: center;
+    line-height: 1.40625rem;
+    color: #3d3d3d;
+    font-size: 125%;
+}
+.sleect{
+    height: 100%;
+    border-bottom: 0.0625rem solid #ea132b;
+    box-sizing: border-box;
+    color: #eb122c;
+    font-weight: bold;
+}
+
+.xinzengbtn{
+    height: 0.96875rem;
+    width: 100%;
+    font-size: 116.6666666666667%;
+    color: #eb122c;
+    text-align: right;
+    padding-right: 0.40625rem;
+    padding-top:0.53125rem;
+}
+
+.liuyanlist{
+    width: 100%;
+    max-height: 3.4375rem;
+    background-color: #ffffff;
+}
+
+.datefont{
+    font-size: 116.6666666666667%;
+    padding-top: 0.625rem;
+    padding-left:0.421875rem ;
+    color: #c8c8c8;
+}
+.contentfont{
+    padding: 0.5625rem 0.421875rem 0.625rem 0.421875rem;
+    font-size: 108.3333333333333%;
+    color: #757575;
+    line-height: 1.2;
+}
+
+.pingtaihuifu{
+    padding: 0.5625rem 0.421875rem 0.625rem 0.421875rem;
+    font-size: 108.3333333333333%;
+    color: #3d3d3d;
+
+    line-height: 1.2;
+}
+
+.yichulilist{
+    max-height: 5.5rem;
+    width: 100%;
+}

@@ -1,0 +1,77 @@
+img{
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+.bgclss{
+    background-image: url("../guaguale/WechatIMG141.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.logimg{
+    width: 8.140625rem;
+    height: 3.890625rem;
+    background-image: url("../guaguale/WechatIMG134.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top:1.09375rem;
+    left: 1rem;
+}
+
+.gutuqu{
+    width:7.28125rem;
+    height:4.4375rem;
+    background-image: url("../guaguale/1/111.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 5.4375rem;
+    left: 1.359375rem;
+}
+
+.canvas {
+    position: absolute;
+    width: 6.25rem;
+    height: 3.15625rem;
+    position: absolute;
+    bottom: .46875rem;
+    left: .515625rem;
+    z-index: 2;
+}
+
+.btnlingqu{
+    width: 6.25rem;
+    height: 1.125rem;
+    background-color: #e60012;
+    font-size: 125%;
+    text-align: center;
+    border-radius: 0.3rem;
+    line-height: 1.125rem;
+    position: absolute;
+    top:11rem;
+    font-weight: bold;
+    color: #fff;
+    left:1.875rem;
+    display: block;
+}
+
+#lotteryContainer{
+    position: absolute;
+    width: 6.25rem;
+    height: 3.15625rem;
+    position: absolute;
+    bottom: .46875rem;
+    left: .515625rem;
+}
+
+.tupianzhongjian{
+    width: 3.125rem;
+    height:2.34375rem;
+    /*background-color: red;*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top:0.234375rem;
+}

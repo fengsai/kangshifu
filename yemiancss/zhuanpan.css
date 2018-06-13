@@ -1,0 +1,113 @@
+.bgz{
+    display: block;
+    width: 100%;
+}
+img{
+    border: none;
+    outline: none;
+    -webkit-user-select: none;
+    user-select:none;
+}
+.zhuanpanarea{
+    position: absolute;
+    left:1.0625rem;
+    top: 4.84375rem;
+    width: 7.875rem;
+    height: 7.875rem;
+    background-size: cover;
+    z-index: 2;
+}
+
+.zhuanpanarea >img{
+    display: block;
+    width: 100%;
+}
+
+.anniu{
+    width: 1.984375rem;
+    height: 2.328125rem;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    margin-top: -1.1640625rem;
+    margin-left: -0.9921875rem;
+    z-index: 3;
+}
+
+.anniu>img{
+    display: block;
+    width: 100%;
+}
+
+.zhjtip{
+    width: 6.28125rem;
+    height: 4.765625rem;
+    background-color: #ffffff;
+    border-radius: 0.4rem;
+}
+
+.zjtipfont{
+    font-size: 100%;
+    text-align: center;
+    color: #898989;
+    line-height: 1.5;
+}
+
+.tipbtn{
+    height: 1.8rem;
+    width: 100%;
+
+}
+
+.tipbtndd{
+    height: 1.8rem;
+    width: 100%;
+}
+
+.dianjilq{
+    width: 3.0625rem;
+    height: 1rem;
+    background-color: #eb122c;
+    border-radius:0.4rem;
+    text-align: center;
+    font-size: 125%;
+    color: #ffffff;
+    position: absolute;
+    left: 1.609375rem;
+    bottom:0rem;
+    line-height:1rem;
+}
+
+.dianjilqdd{
+    width: 3.0625rem;
+    height: 1rem;
+    background-color: #eb122c;
+    border-radius:0.4rem;
+    text-align: center;
+    font-size: 125%;
+    color: #ffffff;
+    position: absolute;
+    left: 1.609375rem;
+    bottom:0rem;
+    line-height:1rem;
+}
+
+
+.Tcss_window_fss{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0px;
+    overflow:hidden;
+    display: none;
+    -webkit-box-align:center;
+    -webkit-backface-visibility:hidden;
+    -webkit-box-pack:center;
+    -webkit-box-orient:vertical;
+    z-index: 9999999;
+    background:
+            -webkit-gradient(radial, 512 389, 0, 512 389, 500,
+            from(rgba(0,0,0,.2)), to(rgba(0,0,0,.5)));
+    background-color: rgba(0,0,0,.5); , color-stop(100%, #C2C2C2)
+
+}

@@ -1,0 +1,254 @@
+body{
+    background-color: #ffffff;
+}
+.headtab{
+    width: 100%;
+    height: 1.40625rem;
+}
+
+.tab1,.tab2,.tab3{
+    width: 3.333333333333333rem;
+    text-align: center;
+    line-height:1.40625rem;
+    font-size: 125%;
+    color: #3d3d3d;
+}
+
+.selected{
+    border-bottom: 0.078125rem solid #ec132b;
+    color: #eb122c;
+    font-weight: bold;
+}
+
+.tab1,.tab2{
+    border-right: 1px solid #f0f0f0;
+}
+
+.subtab{
+    width: 100%;
+    height:1.375rem;
+    background-color: #efefef;
+    font-size: 125%;
+    color: #000000;
+    text-align: center;
+    line-height: 1.375rem;
+}
+
+.subselect{
+    color: #eb122c;
+    font-weight: bold;
+}
+
+.bnnersy{
+    width: 100%;
+    height:3.125rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.bnnersy >img{
+    display: block;
+    width: 100%;
+}
+.jphead{
+    width: 100%;
+    height:1.25rem;
+}
+
+.jpimg{
+    width:0.84375rem;
+    height:0.84375rem;
+    background-image: url("../sucai/jpimg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.jplfetimg1,.jplfetimg2,.jprightimg1,.jprightimg2{
+    width:3.484375rem;
+    height: 2.65625rem;
+    background-image: url("../sucai/p1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.jpleft1,.jpleft2{
+    width: 5rem;
+
+}
+.fontleft1,.fontleft2,.fontright1,.fontright2{
+    font-size: 100%;
+    color: #000000;
+    padding-top: 0.15rem;
+}
+
+.kongtishi{
+    width: 5.4375rem;
+    height:4.203125rem;
+    background-image: url("../sucai/quankong.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left:2.28125rem;
+    top:2.484375rem;
+
+}
+
+.listyjf{
+    width: 100%;
+    height:1.8125rem;
+    margin-top: 0.15625rem;
+    background-color: #ffffff;
+}
+
+.yjftext{
+    width: 3.3125rem;
+    text-align: center;
+    line-height: 1.25rem;
+    font-size: 100%;
+    color: #e60012;
+    border-left: 0.03125rem solid #efefef;
+    height: 1.25rem;
+}
+.typeimg{
+    width: 1.21875rem;
+    height: 1.21875rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 0.984375rem;
+}
+
+.typeimg+div{
+    color: #898989;
+    font-size: 100%;
+    margin-left: 0.3125rem;
+}
+
+.buzutip{
+    width:6.28125rem;
+    height: 4.734375rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    position: fixed;
+    top: 4.53125rem;
+    left:1.859375rem;
+}
+
+.jfshul_fs,.yiyouj_fs{
+    font-size: 125%;
+    color: #898989;
+    font-weight: bold;
+    text-align: center;
+}
+.jfshul_fs{
+    margin-top:1.09375rem;
+}
+.yiyouj_fs{
+    padding-top: 0.1rem;
+}
+
+.jfshul_fssucess,.yiyouj_fssucess{
+    font-size: 125%;
+    color: #898989;
+    font-weight: bold;
+    text-align: center;
+}
+.jfshul_fssucess{
+    margin-top:1.09375rem;
+}
+.yiyouj_fssucess{
+    padding-top: 0.1rem;
+}
+.jfbuzu_btnsucess{
+    width: 3rem;
+    height: 0.96875rem;
+    background-color: #eb122c;
+    line-height: 0.96875rem;
+    font-size: 125%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 1.640625rem;
+    bottom:0.65625rem;
+}
+.jfbuzu_btn{
+    width: 3rem;
+    height: 0.96875rem;
+    background-color: #eb122c;
+    line-height: 0.96875rem;
+    font-size: 125%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 1.640625rem;
+    bottom:0.65625rem;
+}
+
+.exchange1{
+    width:7.375rem;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    height:5.65625rem;
+    position: absolute;
+    left: 1.3125rem;
+    top:4.34375rem;
+}
+
+.exchangeimg{
+    width: 3.484375rem;
+    height: 2.65625rem;
+    background-image: url(../sucai/p1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.exfontt1,.exfontt2{
+    font-size: 125%;
+    text-align: center;
+
+}
+
+.exfontt1{
+    color: #333;
+}
+
+.exfontt2{
+    color: #eb122c;
+    line-height: 1.5;
+}
+
+.bntexcange{
+    width: 100%;
+    height: 1.5625rem;
+    border-top: 1px solid #f0f0f0;
+    position: absolute;
+    bottom: 0;
+}
+
+.bntexcange>div{
+    line-height: 1.5625rem;
+}
+
+.Tcss_window_fs{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0px;
+    overflow:hidden;
+    display: none;
+    left: 0;
+    -webkit-backface-visibility:hidden;
+
+    -webkit-box-orient:vertical;
+    z-index: 9999999;
+    background:
+            -webkit-gradient(radial, 512 389, 0, 512 389, 500,
+            from(rgba(0,0,0,.2)), to(rgba(0,0,0,.5)));
+    background-color: rgba(0,0,0,.5); , color-stop(100%, #C2C2C2)
+
+}
+
+
+

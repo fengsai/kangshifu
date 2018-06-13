@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <script>
+        !function (e) {
+            function t() {
+                var t = r.getBoundingClientRect().width;
+                /T5\//.test(e.navigator.userAgent) && (t = Math.floor(e.screen.width / e.devicePixelRatio)), t / l > 540 && (t = 540 * l);
+                var i = t / 10;
+                r.style.fontSize = i + "px", m.rem = e.rem = i
+            }
+
+            var i, a = e.document, r = a.documentElement, n = a.querySelector('meta[name="viewport"]'), o = a.querySelector('meta[name="flexible"]'), l = 0, s = 0, m = e.flexible || (e.flexible = {}), d = / baiduboxapp\//i.test(e.navigator.userAgent);
+            if (n) {
+                var p = n.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                p && (s = parseFloat(p[1]), l = parseInt(1 / s))
+            } else if (o) {
+                var c = o.getAttribute("content");
+                if (c) {
+                    var u = c.match(/initial\-dpr=([\d\.]+)/), f = c.match(/maximum\-dpr=([\d\.]+)/);
+                    u && (l = parseFloat(u[1]), s = parseFloat((1 / l).toFixed(2))), f && (l = parseFloat(f[1]), s = parseFloat((1 / l).toFixed(2)))
+                }
+            }
+            if (!l && !s) {
+                var v = (e.navigator.appVersion.match(/android/gi), e.navigator.appVersion.match(/iphone/gi)), h = e.devicePixelRatio;
+                l = v ? h >= 3 && (!l || l >= 3) ? 3 : h >= 2 && (!l || l >= 2) ? 2 : 1 : 1, s = 1 / l
+            }
+            if (r.setAttribute("data-dpr", l), !n)if (n = a.createElement("meta"), n.setAttribute("name", "viewport"), n.setAttribute("content", "initial-scale=" + s + ", maximum-scale=" + s + ", minimum-scale=" + s + ", user-scalable=no"), r.firstElementChild)r.firstElementChild.appendChild(n);
+            else {
+                var x = a.createElement("div");
+                x.appendChild(n), a.write(x.innerHTML)
+            }
+            d || e.addEventListener("resize", function () {
+                clearTimeout(i), i = setTimeout(t, 300)
+            }, !1), e.addEventListener("pageshow", function (e) {
+                e.persisted && (clearTimeout(i), i = setTimeout(t, 300))
+            }, !1), "complete" === a.readyState ? a.body.style.fontSize = 12 * l + "px" : a.addEventListener("DOMContentLoaded", function () {
+                a.body.style.fontSize = 12 * l + "px"
+            }, !1), t(), m.dpr = e.dpr = l, m.refreshRem = t, m.rem2px = function (e) {
+                var t = parseFloat(e) * this.rem;
+                return "string" == typeof e && e.match(/rem$/) && (t += "px"), t
+            }, m.px2rem = function (e) {
+                var t = parseFloat(e) / this.rem;
+                return "string" == typeof e && e.match(/px$/) && (t += "rem"), t
+            }
+        }(window);
+    </script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js?v=3"></script>
+    <link type="text/css" href="css/comm.css" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="kiben" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <script type="text/javascript">
+        document.write("<script type='text/javascript' src='util/configc.js?v=" + Math.random() + "'><\/script>")
+    </script>
+    <link rel="stylesheet" href="css/comm.css">
+    <script type="text/javascript">
+        document.write("<link rel='stylesheet' href='yemiancss/index_s.css?v=" + version + "'>");
+    </script>
+    <style>
+        body{
+            line-height: 1;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="Tcss_window" style="">
+    <div class="tcpanduan bx bxc bxv ">
+        <div class="bxf1 tctip w1 fontphone2 borboxsize bx bxc" style="padding-left: 0.3rem;padding-right: 0.3rem;">保存成功</div>
+        <div class="tcbtn bx bxc">
+            <div class="tcbtnsub">确定</div>
+        </div>
+        <div class="w1" style="height: 1rem;"></div>
+    </div>
+</div>
+<div class="container bx bxv">
+
+</div>
+<script type="text/template" id="main">
+    <style>
+        .listphone{
+            width: 100%;
+            height: 1.4375rem;
+            background-color: #ffffff;
+        }
+
+        .listphone>div{
+            height: 100%;
+            padding-left: 0.375rem;
+            box-sizing: border-box;
+        }
+
+        ::-webkit-input-placeholder{
+            font-size: 100%;
+            color: #b1b1b1;
+        }
+
+        input{
+            border: none;
+            font-size: 116.6666666666667%;
+            color: #b1b1b1;
+        }
+
+        .listphone>.yanzhengma{
+            width: 2.5rem;
+            height: 0.84375rem;
+            background-color: #f17280;
+            border-radius: 0.2rem;
+            margin-right:0.34375rem;
+            text-align: center;
+            padding-left: 0;
+            line-height: 0.84375rem;
+            font-size:108.3333333333333%;
+            color: #ffffff;
+        }
+
+        .btninfo{
+            width: 9.09375rem;
+            height: 1.4375rem;
+            background-color: #ea142b;
+            position: absolute;
+            left: 0.453125rem;
+            border-radius: 0.2rem;
+            text-align: center;
+            line-height: 1.4375rem;
+            font-size:133.3333333333333%;
+            color: #ffffff;
+            top:3.59375rem;
+        }
+
+        .fontphone1{
+            font-size: 125%;
+            color: #000000;
+            line-height: 1.4375rem;
+            padding-left: 0.34375rem;
+
+        }
+
+        .tcpanduan{
+            min-width: 6.28125rem;
+            height:4.625rem;
+            background-color: #ffffff;
+            border-radius: 0.2rem;
+        }
+
+        .tcbtn{
+            width: 100%;
+            height:1.25rem;
+        }
+
+        .tcbtnsub{
+            width: 4.40625rem;
+            height: 100%;
+            background-color: #EA142B;
+            text-align: center;
+            line-height: 1.25rem;
+            font-size: 133.3333333333333%;
+            color: #ffffff;
+            border-radius: 0.4rem;
+        }
+
+        .fontphone2{
+            text-align: center;
+            font-size: 125%;
+            color: #010101;
+        }
+
+    </style>
+    <div class="listphone bxh bx borboxsize bxc">
+        <div class="fontphone1">手机号</div>
+        <div class="bxf1">
+            <input type="number" class="h1 w1 myphones" placeholder="请输入手机号">
+        </div>
+    </div>
+    <div style="width: 100%;height: 1px;background-color: #f3f3f3;"></div>
+    <div class="listphone bx bxh borboxsize bxc">
+        <div class="fontphone1">验证码</div>
+        <div class="bxf1">
+            <input type="number" placeholder="请输入验证码" class="w1 h1 tianxieyzm">
+        </div>
+        <div class="yanzhengma bx bxc" style="line-height: 1;">
+            获取验证码
+        </div>
+    </div>
+
+    <div class="btninfo">确认</div>
+</script>
+<script type="text/template" id="centerIndex">
+    <style>
+        .vipka{
+            width: 100%;
+            height:5.96875rem;
+            background:url("image/vipkaka.jpg?v1");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: relative;
+
+        }
+
+        .headtab{
+            width: 100%;
+            height:2.28125rem;
+            background-color: #ffffff;
+        }
+        .qiegequ{
+            width: 100%;
+            height:0.25rem;
+            background-color:#f3f3f3;
+        }
+
+        .tab1,.tab2,.tab3{
+            width: 0.8125rem;
+            height: 0.8125rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .tab1+div,.tab2+div,.tab3+div{
+            margin-top: 0.28125rem;
+            font-size:91.66666666666667%;
+            color: #6a6a6a;
+        }
+
+        .tab1{
+            background-image: url("centerImage/jf.png");
+        }
+
+        .tab2{
+            background-image: url("centerImage/zic.png");
+        }
+
+        .tab3{
+            background-image: url("centerImage/jx.png");
+        }
+
+        .myinfo,.myjp,.gmlis,.kfcenter{
+            width: 1.5625rem;
+            height: 1.5625rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .myinfo{
+            background-image: url("centerImage/myinfo.png");
+        }
+        .myjp{
+            background-image: url("centerImage/myjp.png");
+        }
+        .gmlis{
+            background-image: url("centerImage/gmls.png");
+
+        }
+        .kfcenter{
+            background-image: url("centerImage/kfcter.png");
+        }
+
+        .topfont{
+            font-size: 100%;
+            color: #404040;
+            padding-top: 0.25rem;
+        }
+
+        .bottomfont{
+            font-size: 83.33333333333333%;
+            color: #6a6a6a;
+            padding-top: 0.125rem;
+        }
+
+        .vipdata{
+            position: absolute;
+            top:5.006875rem;
+            right: 0.71875rem;
+            font-size: 91.66666666666667%;
+            color: #dabb93;
+            opacity: 0.6;
+        }
+        .viphao{
+            position: absolute;
+            top:4.53125rem;
+            right: 0.71875rem;
+            font-size: 91.66666666666667%;
+            color: #dabb93;
+        }
+
+        /*.vipka >img{*/
+        /*display: block;*/
+        /*border: none;*/
+        /*width: 9.21875rem;*/
+        /*height:5.09375rem;*/
+        /*}*/
+    </style>
+    <div class="vipka">
+        <div class="viphao fontall"></div>
+        <div class="vipdata fontall"></div>
+    </div>
+    <div class="headtab bx bxh borboxsize">
+        <div class="bxf1 h1 bx bxv bxc fs-jfjf">
+            <div class="tab1"></div>
+            <div>积分<span class="fontall fs-jf"></span></div>
+        </div>
+        <div class="bxf1 h1 bx bxv bxc fs-zcc">
+            <div class="tab2"></div>
+            <div>资产<span class="fontall fs-zc"></span>元</div>
+        </div>
+        <div class="bxf1 h1 bx bxv bxc fs-jxjx">
+            <div class="tab3"></div>
+            <div>奖项<span class="fontall fs-jx"></span>次</div>
+        </div>
+    </div>
+    <div class="qiegequ"></div>
+    <div class="bxf1 w1 bx bxv" style="background-color: #ffffff;">
+        <div class="topfu bxf1 w1 borboxsize bx bxh" style="border-bottom: 1px solid #f0f0f0;">
+            <div class="bxf1 top bx bxv bxc borboxsize mymessage" style="border-right: 1px solid #f0f0f0;width: 5rem;">
+                <div class="myinfo"></div>
+                <div class="topfont">我的信息</div>
+                <div class="bottomfont">完善资料赢奖励</div>
+            </div>
+            <div class="bxf1 top bx bxv bxc borboxsize myjpinfo" style="width: 5rem;">
+                <div class="myjp"></div>
+                <div class="topfont">我的奖品</div>
+                <div class="bottomfont">红包积分更多惊喜</div>
+            </div>
+        </div>
+        <div class="bxf1 w1 bx bxh borboxsize bottomfu" style="">
+            <div class="bxf1 bottom bx bxv bxc borboxsize mygminfo" style="border-right: 1px solid #f0f0f0;width: 5rem;">
+                <div class="gmlis"></div>
+                <div class="topfont">购买历史</div>
+                <div class="bottomfont">查看开箱扫码记录</div>
+            </div>
+            <div class="bxf1 bottom bx bxv bxc borboxsize mykfinfo" style="width: 5rem;">
+                <div class="kfcenter"></div>
+                <div class="topfont">客服中心</div>
+                <div class="bottomfont">专注为您服务</div>
+            </div>
+        </div>
+    </div>
+</script>
+</body>
+<script type="text/javascript" src="util/zepto.min.js"></script>
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="util/comm.js?v='+version+'"><\/script>')
+</script>
+<script type="text/javascript" src="util/MD5.js"></script>
+<script type="text/javascript" src="util/cunxhuinfo.js"></script>
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="util/sq.js?v='+version+'"><\/script>')
+</script>
+<script type="text/javascript">
+    document.write("<script type='text/javascript' src='yemianjs/index_s.js?v=" + version + "'><\/script>")
+</script>
+</html>

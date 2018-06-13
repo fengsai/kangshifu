@@ -1,0 +1,25 @@
+.vipka{
+    width: 100%;
+    height:5.96875rem;
+    background:url("../centerImage/hykvip.jpg?v1");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+
+}
+
+.vipdata{
+    position: absolute;
+    top:5.006875rem;
+    right: 0.71875rem;
+    font-size: 91.66666666666667%;
+    color: #dabb93;
+    opacity: 0.6;
+}
+.viphao{
+    position: absolute;
+    top:4.53125rem;
+    right: 0.71875rem;
+    font-size: 91.66666666666667%;
+    color: #dabb93;
+}

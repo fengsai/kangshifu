@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <script>
+        !function (e) {
+            function t() {
+                var t = r.getBoundingClientRect().width;
+                /T5\//.test(e.navigator.userAgent) && (t = Math.floor(e.screen.width / e.devicePixelRatio)), t / l > 540 && (t = 540 * l);
+                var i = t / 10;
+                r.style.fontSize = i + "px", m.rem = e.rem = i
+            }
+
+            var i, a = e.document, r = a.documentElement, n = a.querySelector('meta[name="viewport"]'), o = a.querySelector('meta[name="flexible"]'), l = 0, s = 0, m = e.flexible || (e.flexible = {}), d = / baiduboxapp\//i.test(e.navigator.userAgent);
+            if (n) {
+                var p = n.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                p && (s = parseFloat(p[1]), l = parseInt(1 / s))
+            } else if (o) {
+                var c = o.getAttribute("content");
+                if (c) {
+                    var u = c.match(/initial\-dpr=([\d\.]+)/), f = c.match(/maximum\-dpr=([\d\.]+)/);
+                    u && (l = parseFloat(u[1]), s = parseFloat((1 / l).toFixed(2))), f && (l = parseFloat(f[1]), s = parseFloat((1 / l).toFixed(2)))
+                }
+            }
+            if (!l && !s) {
+                var v = (e.navigator.appVersion.match(/android/gi), e.navigator.appVersion.match(/iphone/gi)), h = e.devicePixelRatio;
+                l = v ? h >= 3 && (!l || l >= 3) ? 3 : h >= 2 && (!l || l >= 2) ? 2 : 1 : 1, s = 1 / l
+            }
+            if (r.setAttribute("data-dpr", l), !n)if (n = a.createElement("meta"), n.setAttribute("name", "viewport"), n.setAttribute("content", "initial-scale=" + s + ", maximum-scale=" + s + ", minimum-scale=" + s + ", user-scalable=no"), r.firstElementChild)r.firstElementChild.appendChild(n);
+            else {
+                var x = a.createElement("div");
+                x.appendChild(n), a.write(x.innerHTML)
+            }
+            d || e.addEventListener("resize", function () {
+                clearTimeout(i), i = setTimeout(t, 300)
+            }, !1), e.addEventListener("pageshow", function (e) {
+                e.persisted && (clearTimeout(i), i = setTimeout(t, 300))
+            }, !1), "complete" === a.readyState ? a.body.style.fontSize = 12 * l + "px" : a.addEventListener("DOMContentLoaded", function () {
+                a.body.style.fontSize = 12 * l + "px"
+            }, !1), t(), m.dpr = e.dpr = l, m.refreshRem = t, m.rem2px = function (e) {
+                var t = parseFloat(e) * this.rem;
+                return "string" == typeof e && e.match(/rem$/) && (t += "px"), t
+            }, m.px2rem = function (e) {
+                var t = parseFloat(e) / this.rem;
+                return "string" == typeof e && e.match(/px$/) && (t += "rem"), t
+            }
+        }(window);
+    </script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js?v=3"></script>
+    <link type="text/css" href="css/comm.css" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="kiben" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <script type="text/javascript">
+        document.write("<script type='text/javascript' src='util/configc.js?v=" + Math.random() + "'><\/script>")
+    </script>
+    <link rel="stylesheet" href="css/comm.css">
+    <script type="text/javascript">
+        document.write("<link rel='stylesheet' href='yemiancss/shouhuolingqu.css?v=" + version + "'>");
+    </script>
+    <style>
+        body{
+            line-height: 1;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="container bx bxv">
+<div class="tipyincang"></div>
+<div class="headdizhi bx bxh bxc borboxsize">
+    <div class="dingewitip"></div>
+    <div class="bxf1 bx bxv yyyddzz" style="display: none;">
+        <div class="bxf1 bx bxh dizhifont1">
+            <div class="dizhiname"></div>
+            <div class="bxf1 dizhipone" style="padding-left: 0.5rem;"></div>
+        </div>
+        <div class="bxf1 dizhifont2 break_main" style="font-size: 108.3333333333333%"> </div>
+    </div>
+    <div class="bxf1 h1 wudizhi">你还没添加收货人信息</div>
+    <div class="jiantoutip"></div>
+</div>
+<div class="caiceline"></div>
+<div class="chanpq bx bxc bxh borboxsize">
+    <div class="shangpimg">
+        <img style="display: block;width: 100%;height: 100%;border: none;outline: none;" src="" alt="">
+    </div>
+    <div class="bxf1 h1 shangnan">康师傅冰红茶1箱,价值65元</div>
+</div>
+<div class="w1 bxf1" style="background-color: #ffffff;">
+    <div class="btnsure">确定</div>
+</div>
+<!--领取成功    -->
+    <div class="cpexchange Tcss_window_fs" style="display: none;-webkit-box-align:center;">
+        <div class="exchange1 bx bxv" style="-webkit-box-align:center;">
+            <div class="exfontt1" style="font-size: 180%;margin-top: 2rem;">领取成功</div>
+            <div class="exfontt2"></div>
+            <div class="bntexcange bx bxh borboxsize">
+                <!--<div class="borboxsize" style="width: 50%;height: 100%;-->
+            <!--text-align: center;font-size: 125%;border-right: 1px solid #f0f0f0;-->
+            <!--color: #898989;font-weight: bold;">再看看</div>-->
+                <div style="width: 100%;height: 100%;text-align: center;font-size: 125%;color: #eb122c;font-weight: bold;">返回首页</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script type="text/javascript" src="util/zepto.min.js"></script>
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="util/comm.js?v='+version+'"><\/script>')
+</script>
+<script type="text/javascript" src="util/MD5.js"></script>
+<script type="text/javascript" src="util/cunxhuinfo.js"></script>
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="util/sq.js?v='+version+'"><\/script>')
+</script>
+<script type="text/javascript">
+    document.write("<script type='text/javascript' src='yemianjs/shouhuolingqu.js?v=" + version + "'><\/script>")
+</script>
+</html>

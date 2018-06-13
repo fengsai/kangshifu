@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的信息</title>
+    <script>
+        !function (e) {
+            function t() {
+                var t = r.getBoundingClientRect().width;
+                /T5\//.test(e.navigator.userAgent) && (t = Math.floor(e.screen.width / e.devicePixelRatio)), t / l > 540 && (t = 540 * l);
+                var i = t / 10;
+                r.style.fontSize = i + "px", m.rem = e.rem = i
+            }
+
+            var i, a = e.document, r = a.documentElement, n = a.querySelector('meta[name="viewport"]'), o = a.querySelector('meta[name="flexible"]'), l = 0, s = 0, m = e.flexible || (e.flexible = {}), d = / baiduboxapp\//i.test(e.navigator.userAgent);
+            if (n) {
+                var p = n.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                p && (s = parseFloat(p[1]), l = parseInt(1 / s))
+            } else if (o) {
+                var c = o.getAttribute("content");
+                if (c) {
+                    var u = c.match(/initial\-dpr=([\d\.]+)/), f = c.match(/maximum\-dpr=([\d\.]+)/);
+                    u && (l = parseFloat(u[1]), s = parseFloat((1 / l).toFixed(2))), f && (l = parseFloat(f[1]), s = parseFloat((1 / l).toFixed(2)))
+                }
+            }
+            if (!l && !s) {
+                var v = (e.navigator.appVersion.match(/android/gi), e.navigator.appVersion.match(/iphone/gi)), h = e.devicePixelRatio;
+                l = v ? h >= 3 && (!l || l >= 3) ? 3 : h >= 2 && (!l || l >= 2) ? 2 : 1 : 1, s = 1 / l
+            }
+            if (r.setAttribute("data-dpr", l), !n)if (n = a.createElement("meta"), n.setAttribute("name", "viewport"), n.setAttribute("content", "initial-scale=" + s + ", maximum-scale=" + s + ", minimum-scale=" + s + ", user-scalable=no"), r.firstElementChild)r.firstElementChild.appendChild(n);
+            else {
+                var x = a.createElement("div");
+                x.appendChild(n), a.write(x.innerHTML)
+            }
+            d || e.addEventListener("resize", function () {
+                clearTimeout(i), i = setTimeout(t, 300)
+            }, !1), e.addEventListener("pageshow", function (e) {
+                e.persisted && (clearTimeout(i), i = setTimeout(t, 300))
+            }, !1), "complete" === a.readyState ? a.body.style.fontSize = 12 * l + "px" : a.addEventListener("DOMContentLoaded", function () {
+                a.body.style.fontSize = 12 * l + "px"
+            }, !1), t(), m.dpr = e.dpr = l, m.refreshRem = t, m.rem2px = function (e) {
+                var t = parseFloat(e) * this.rem;
+                return "string" == typeof e && e.match(/rem$/) && (t += "px"), t
+            }, m.px2rem = function (e) {
+                var t = parseFloat(e) / this.rem;
+                return "string" == typeof e && e.match(/px$/) && (t += "rem"), t
+            }
+        }(window);
+    </script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js?v=3"></script>
+    <link type="text/css" href="css/comm.css" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="kiben" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <script type="text/javascript">
+        document.write("<script type='text/javascript' src='util/configc.js?v=" + Math.random() + "'><\/script>")
+    </script>
+    <link rel="stylesheet" href="css/comm.css">
+    <link rel="stylesheet" href="css/city.css">
+    <link rel="stylesheet" type="text/css" href="cssmobie/public.css">
+
+    <!-- 引入样式和js文件 -->
+    <link rel="stylesheet" type="text/css" href="cssmobie/mobileSelect.css">
+    <script src="jsmobie/mobileSelect.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        document.write("<link rel='stylesheet' href='yemiancss/centertab.css?v=" + version + "'>");
+    </script>
+    <style>
+        body{
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="container bx bxv">
+<div class="tipyincang"></div>
+<div class="headtab bx bxh">
+    <div class="h1 tb tab1 borboxsize" data-id="1">个人资料</div>
+    <div class="h1 tb tab2 borboxsize" data-id="2">我的店铺</div>
+    <div class="h1 tb tab3 borboxsize " data-id="3">我的收货地址</div>
+</div>
+<div class="w1" style="height:0.125rem;background-color: #f3f3f3;"></div>
+<div class="bxf1 tabshow w1 tabshow1 bx bxv scroll" style="display:none;">
+            <!--<div class="bxf1 w1  bx bxv">-->
+            <!--<div class="listinfo borboxsize bx bxv">-->
+            <!--<div class="xbfont">性别</div>-->
+            <!--<div class="w1 bx bxh" style="">-->
+            <!--<div class="bx bxc bxf1" style="width: 5rem;height: 0.703125rem;">-->
+            <!--<input class="xbxb" type="radio"  name="male" id="nan" value="1">-->
+            <!--<label for="nan" class="nx borboxsize" style="padding-left:3.296875rem;">-->
+
+            <!--</label>-->
+            <!--</div>-->
+            <!--<div class="bx bxc bxf1" style="width: 5rem;height: 0.703125rem;">-->
+            <!--<input class="xbxb" type="radio" name="male" id="nv" value="2">-->
+            <!--<label for="nv" class="vx borboxsize">-->
+            <!--</label>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div style="width: 100%;height: 0.5625rem;"></div>-->
+            <!--</div>-->
+            <!--<div class="listinfo borboxsize bx bxv">-->
+            <!--<div class="xbfont" style="padding-top: 0.59375rem;">年龄(必选)</div>-->
+            <!--<div class="bx bxh nld bxc fontall" style="height: 0.8125rem;">-->
+            <!--<div class="" style="text-align: center;">70前</div>-->
+            <!--<div style="margin-left: 0.609375rem;text-align: center;">70后</div>-->
+            <!--<div style="margin-left: 0.609375rem;text-align: center;">80后</div>-->
+            <!--<div style="margin-left: 0.609375rem;text-align: center;">90后</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="listinfo borboxsize bx bxv">-->
+            <!--<div class="xbfont" style="padding-top: 0.59375rem;">职位(必选)</div>-->
+            <!--<div class="bx bxh w1 zwinfo" style="height: 0.8125rem;">-->
+            <!--<div style="margin-left: 0.54375rem;width: 1.59375rem;" class="">老板</div>-->
+            <!--<div style="margin-left:0.309375rem;width: 2.125rem">老板娘</div>-->
+            <!--<div style="margin-left:0.309375rem;width: 2.125rem">店小二</div>-->
+            <!--<div style="margin-left:0.309375rem;width: 2.125rem">理货员</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="listinfo borboxsize bx bxv">-->
+            <!--<div class="xbfont" style="padding-top: 0.59375rem;">是否有孩子</div>-->
+            <!--<div class="w1 bx bxh" style="">-->
+            <!--<div class="bx bxc bxf1" style="width: 5rem;height: 0.703125rem;">-->
+            <!--<input class="shengyu" type="radio"  name="haizi" id="yes" value="1">-->
+            <!--<label for="yes" class="you borboxsize" style="padding-left:3.296875rem;">-->
+            <!--</label>-->
+            <!--</div>-->
+            <!--<div class="bx bxc bxf1" style="width: 5rem;height: 0.703125rem;">-->
+            <!--<input class="shengyu" type="radio" name="haizi" id="no" value="0">-->
+            <!--<label for="no" class="meiyou borboxsize">-->
+            <!--</label>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div style="width: 100%;height: 0.5625rem;"></div>-->
+            <!--</div>-->
+            <!--<div class="bx bxh w1 borboxsize" style="padding-left: 1.03125rem;margin-top:1.15625rem;height: 0.5625rem;">-->
+            <!--<div style="font-size: 100%;color: #9d9d9d;padding-top:0.078125rem">手机号</div>-->
+            <!--<div class="fs-zlphone" style="font-size: 141.6666666666667%;color: #5c5c5c;margin-left:0.375rem;"></div>-->
+            <!--<div class="fs-edphone" style="font-size: 141.6666666666667%;color: #eb122c;margin-left:0.75rem;border-bottom: 1px solid #eb122c;">更改手机号</div>-->
+            <!--</div>-->
+            <!--<div class="btninfo bx bxc">-->
+            <!--<div class="btninfosub">保存</div>-->
+            <!--</div>-->
+            <!--</div>-->
+    <div class="bxf1 w1  bx bxv">
+    <div class="listinfo borboxsize bx bxv">
+    <div class="xbfont">性别</div>
+    <div class="w1 bx bxh" style="">
+    <div class="bx bxc bxf1" style="width: 5rem;height: 0.703125rem;">
+    <!--<input class="xbxb" type="radio"  name="male" id="nan" value="1">-->
+    <div class="nx borboxsize fsnn" style="padding-left:3.296875rem;">
+        <div></div>
+    </div>
+    </div>
+    <div class="bx bxc bxf1" style="width: 5rem;height: 0.703125rem;">
+    <!--<input class="xbxb" type="radio" name="male" id="nv" value="2">-->
+    <div for="nvs" class="vx borboxsize fsnv">
+        <div></div>
+    </div>
+    </div>
+    </div>
+    <div style="width: 100%;height: 0.5625rem;"></div>
+    </div>
+    <div class="listinfo borboxsize bx bxv">
+    <div class="xbfont" style="padding-top: 0.59375rem;">年龄(必选)</div>
+    <div class="bx bxh nld_s bxc fontall" style="height: 0.8125rem;">
+    <div class="" style="text-align: center;">70前</div>
+    <div class="" style="margin-left: 0.609375rem;text-align: center;">70后</div>
+    <div style="margin-left: 0.609375rem;text-align: center;">80后</div>
+    <div style="margin-left: 0.609375rem;text-align: center;">90后</div>
+    </div>
+    </div>
+    <div class="listinfo borboxsize bx bxv">
+    <div class="xbfont" style="padding-top: 0.59375rem;">职位(必选)</div>
+    <div class="bx bxh w1 zwinfo_s" style="height: 0.8125rem;">
+    <div style="margin-left: 0.54375rem;width: 1.59375rem;" class="">老板</div>
+    <div style="margin-left:0.309375rem;width: 2.125rem">老板娘</div>
+    <div style="margin-left:0.309375rem;width: 2.125rem">店小二</div>
+    <div style="margin-left:0.309375rem;width: 2.125rem">理货员</div>
+    </div>
+    </div>
+    <div class="listinfo borboxsize bx bxv">
+    <div class="xbfont" style="padding-top: 0.59375rem;">是否有孩子</div>
+    <div class="w1 bx bxh" style="">
+    <div class="bx bxc bxf1" style="width: 5rem;height: 0.703125rem;">
+    <!--<input class="shengyu" type="radio"  name="haizi" id="yes" value="1">-->
+    <div for="yes" class="you borboxsize ymchildre" style="padding-left:3.296875rem;">
+        <div></div>
+    </div>
+    </div>
+    <div class="bx bxc bxf1" style="width: 5rem;height: 0.703125rem;">
+    <!--<input class="shengyu" type="radio" name="haizi" id="no" value="0">-->
+    <div for="no" class="meiyou borboxsize ymchildre">
+        <div></div>
+    </div>
+    </div>
+    </div>
+    <div style="width: 100%;height: 0.5625rem;"></div>
+    </div>
+    <div class="bx bxh w1 borboxsize" style="padding-left: 1.03125rem;margin-top:1.15625rem;height: 0.5625rem;">
+    <div style="font-size: 100%;color: #9d9d9d;padding-top:0.078125rem">手机号</div>
+    <div class="fs-zlphone" style="font-size: 141.6666666666667%;color: #5c5c5c;margin-left:0.375rem;"></div>
+    <div class="fs-edphones" style="font-size: 141.6666666666667%;color: #929292;margin-left:0.75rem;border-bottom: 1px solid #929292;">更改手机号</div>
+    </div>
+    <div class="btninfo bx bxc">
+    <div class="btninfosub_s">编辑</div>
+    </div>
+    </div>
+</div>
+<div class="bxf1 tabshow w1 tabshow2 bx bxv scroll" style="display: none;">
+
+</div>
+<div class="bxf1 tabshow w1 tabshow3 bx bxv scroll" style="display:none;"></div>
+<div class="addsp bx bxc" style="display: none;">
+    <div class="addshop">新增店铺</div>
+</div>
+ <div class="addshuohuo bx bxc" style="display: none;">
+        <div class="addshou">新增收货地址</div>
+    </div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="util/zepto.min.js"></script>
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="util/comm.js?v='+version+'"><\/script>')
+</script>
+<script type="text/javascript" src="util/MD5.js"></script>
+<script type="text/javascript" src="util/city1.js"></script>
+<script type="text/javascript" src="util/city2.js"></script>
+<script type="text/javascript" src="util/city.js?v=3"></script>
+<script type="text/javascript" src="./util/cunxhuinfo.js"></script>
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="util/sq.js?v='+version+'"><\/script>')
+</script><script type="text/javascript">
+    document.write("<script type='text/javascript' src='yemianjs/centertab.js?v=" + version + "'><\/script>")
+</script>
+</html>

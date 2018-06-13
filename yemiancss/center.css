@@ -1,0 +1,101 @@
+.vipka{
+    width: 100%;
+    height:5.96875rem;
+    background:url("../centerImage/hykvip.jpg?v1");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    
+}
+
+.headtab{
+    width: 100%;
+    height:2.28125rem;
+    background-color: #ffffff;
+}
+.qiegequ{
+    width: 100%;
+    height:0.25rem;
+    background-color:#f3f3f3;
+}
+
+.tab1,.tab2,.tab3{
+    width: 0.8125rem;
+    height: 0.8125rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.tab1+div,.tab2+div,.tab3+div{
+    margin-top: 0.28125rem;
+    font-size:91.66666666666667%;
+    color: #6a6a6a;
+}
+
+.tab1{
+    background-image: url("../centerImage/jf.png");
+}
+
+.tab2{
+    background-image: url("../centerImage/zic.png");
+}
+
+.tab3{
+    background-image: url("../centerImage/jx.png");
+}
+
+.myinfo,.myjp,.gmlis,.kfcenter{
+    width: 1.5625rem;
+    height: 1.5625rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.myinfo{
+    background-image: url("../centerImage/myinfo.png");
+}
+.myjp{
+    background-image: url("../centerImage/myjp.png");
+}
+.gmlis{
+    background-image: url("../centerImage/gmls.png");
+
+}
+.kfcenter{
+    background-image: url("../centerImage/kfcter.png");
+}
+
+.topfont{
+    font-size: 100%;
+    color: #404040;
+    padding-top: 0.25rem;
+}
+
+.bottomfont{
+    font-size: 83.33333333333333%;
+    color: #6a6a6a;
+    padding-top: 0.125rem;
+}
+
+.vipdata{
+    position: absolute;
+    top:5.006875rem;
+    right: 0.71875rem;
+    font-size: 91.66666666666667%;
+    color: #dabb93;
+    opacity: 0.6;
+}
+.viphao{
+    position: absolute;
+    top:4.53125rem;
+    right: 0.71875rem;
+    font-size: 91.66666666666667%;
+    color: #dabb93;
+}
+
+/*.vipka >img{*/
+    /*display: block;*/
+    /*border: none;*/
+    /*width: 9.21875rem;*/
+    /*height:5.09375rem;*/
+/*}*/

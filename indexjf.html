@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <script>
+        !function (e) {
+            function t() {
+                var t = r.getBoundingClientRect().width;
+                /T5\//.test(e.navigator.userAgent) && (t = Math.floor(e.screen.width / e.devicePixelRatio)), t / l > 540 && (t = 540 * l);
+                var i = t / 10;
+                r.style.fontSize = i + "px", m.rem = e.rem = i
+            }
+
+            var i, a = e.document, r = a.documentElement, n = a.querySelector('meta[name="viewport"]'), o = a.querySelector('meta[name="flexible"]'), l = 0, s = 0, m = e.flexible || (e.flexible = {}), d = / baiduboxapp\//i.test(e.navigator.userAgent);
+            if (n) {
+                var p = n.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                p && (s = parseFloat(p[1]), l = parseInt(1 / s))
+            } else if (o) {
+                var c = o.getAttribute("content");
+                if (c) {
+                    var u = c.match(/initial\-dpr=([\d\.]+)/), f = c.match(/maximum\-dpr=([\d\.]+)/);
+                    u && (l = parseFloat(u[1]), s = parseFloat((1 / l).toFixed(2))), f && (l = parseFloat(f[1]), s = parseFloat((1 / l).toFixed(2)))
+                }
+            }
+            if (!l && !s) {
+                var v = (e.navigator.appVersion.match(/android/gi), e.navigator.appVersion.match(/iphone/gi)), h = e.devicePixelRatio;
+                l = v ? h >= 3 && (!l || l >= 3) ? 3 : h >= 2 && (!l || l >= 2) ? 2 : 1 : 1, s = 1 / l
+            }
+            if (r.setAttribute("data-dpr", l), !n)if (n = a.createElement("meta"), n.setAttribute("name", "viewport"), n.setAttribute("content", "initial-scale=" + s + ", maximum-scale=" + s + ", minimum-scale=" + s + ", user-scalable=no"), r.firstElementChild)r.firstElementChild.appendChild(n);
+            else {
+                var x = a.createElement("div");
+                x.appendChild(n), a.write(x.innerHTML)
+            }
+            d || e.addEventListener("resize", function () {
+                clearTimeout(i), i = setTimeout(t, 300)
+            }, !1), e.addEventListener("pageshow", function (e) {
+                e.persisted && (clearTimeout(i), i = setTimeout(t, 300))
+            }, !1), "complete" === a.readyState ? a.body.style.fontSize = 12 * l + "px" : a.addEventListener("DOMContentLoaded", function () {
+                a.body.style.fontSize = 12 * l + "px"
+            }, !1), t(), m.dpr = e.dpr = l, m.refreshRem = t, m.rem2px = function (e) {
+                var t = parseFloat(e) * this.rem;
+                return "string" == typeof e && e.match(/rem$/) && (t += "px"), t
+            }, m.px2rem = function (e) {
+                var t = parseFloat(e) / this.rem;
+                return "string" == typeof e && e.match(/px$/) && (t += "rem"), t
+            }
+        }(window);
+    </script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js?v=3"></script>
+    <link type="text/css" href="css/comm.css" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="kiben" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <script type="text/javascript">
+        document.write("<script type='text/javascript' src='util/configc.js?v=" + Math.random() + "'><\/script>")
+    </script>
+    <link rel="stylesheet" href="css/comm.css">
+    <script type="text/javascript">
+        document.write("<link rel='stylesheet' href='yemiancss/index_s.css?v=" + version + "'>");
+    </script>
+    <style>
+        body{
+            line-height: 1;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="Tcss_window" style="">
+    <div class="tcpanduan bx bxc bxv ">
+        <div class="bxf1 tctip w1 fontphone2 borboxsize bx bxc" style="padding-left: 0.3rem;padding-right: 0.3rem;">保存成功</div>
+        <div class="tcbtn bx bxc">
+            <div class="tcbtnsub">确定</div>
+        </div>
+        <div class="w1" style="height: 1rem;"></div>
+    </div>
+</div>
+<div class="container bx bxv">
+
+</div>
+<script type="text/template" id="main">
+    <style>
+        .listphone{
+            width: 100%;
+            height: 1.4375rem;
+            background-color: #ffffff;
+        }
+
+        .listphone>div{
+            height: 100%;
+            padding-left: 0.375rem;
+            box-sizing: border-box;
+        }
+
+        ::-webkit-input-placeholder{
+            font-size: 100%;
+            color: #b1b1b1;
+        }
+
+        input{
+            border: none;
+            font-size: 116.6666666666667%;
+            color: #b1b1b1;
+        }
+
+        .listphone>.yanzhengma{
+            width: 2.5rem;
+            height: 0.84375rem;
+            background-color: #f17280;
+            border-radius: 0.2rem;
+            margin-right:0.34375rem;
+            text-align: center;
+            padding-left: 0;
+            line-height: 0.84375rem;
+            font-size:108.3333333333333%;
+            color: #ffffff;
+        }
+
+        .btninfo{
+            width: 9.09375rem;
+            height: 1.4375rem;
+            background-color: #ea142b;
+            position: absolute;
+            left: 0.453125rem;
+            border-radius: 0.2rem;
+            text-align: center;
+            line-height: 1.4375rem;
+            font-size:133.3333333333333%;
+            color: #ffffff;
+            top:3.59375rem;
+        }
+
+        .fontphone1{
+            font-size: 125%;
+            color: #000000;
+            line-height: 1.4375rem;
+            padding-left: 0.34375rem;
+
+        }
+
+        .tcpanduan{
+            min-width: 6.28125rem;
+            height:4.625rem;
+            background-color: #ffffff;
+            border-radius: 0.2rem;
+        }
+
+        .tcbtn{
+            width: 100%;
+            height:1.25rem;
+        }
+
+        .tcbtnsub{
+            width: 4.40625rem;
+            height: 100%;
+            background-color: #EA142B;
+            text-align: center;
+            line-height: 1.25rem;
+            font-size: 133.3333333333333%;
+            color: #ffffff;
+            border-radius: 0.4rem;
+        }
+
+        .fontphone2{
+            text-align: center;
+            font-size: 125%;
+            color: #010101;
+        }
+
+    </style>
+    <div class="listphone bxh bx borboxsize bxc">
+        <div class="fontphone1">手机号</div>
+        <div class="bxf1">
+            <input type="number" class="h1 w1 myphones" placeholder="请输入手机号">
+        </div>
+    </div>
+    <div style="width: 100%;height: 1px;background-color: #f3f3f3;"></div>
+    <div class="listphone bx bxh borboxsize bxc">
+        <div class="fontphone1">验证码</div>
+        <div class="bxf1">
+            <input type="number" placeholder="请输入验证码" class="w1 h1 tianxieyzm">
+        </div>
+        <div class="yanzhengma bx bxc" style="line-height: 1;">
+            获取验证码
+        </div>
+    </div>
+
+    <div class="btninfo">确认</div>
+</script>
+<script type="text/template" id="jfindex">
+    <style>
+        body{
+            background-color: #ffffff;
+        }
+        .headtab{
+            width: 100%;
+            height: 1.40625rem;
+        }
+
+        .tab1,.tab2,.tab3{
+            width: 3.333333333333333rem;
+            text-align: center;
+            line-height:1.40625rem;
+            font-size: 125%;
+            color: #3d3d3d;
+        }
+
+        .selected{
+            border-bottom: 0.078125rem solid #ec132b;
+            color: #eb122c;
+            font-weight: bold;
+        }
+
+        .tab1,.tab2{
+            border-right: 1px solid #f0f0f0;
+        }
+
+        .subtab{
+            width: 100%;
+            height:1.375rem;
+            background-color: #efefef;
+            font-size: 125%;
+            color: #000000;
+            text-align: center;
+            line-height: 1.375rem;
+        }
+
+        .subselect{
+            color: #eb122c;
+            font-weight: bold;
+        }
+
+        .bnnersy{
+            width: 100%;
+            height:3.125rem;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .bnnersy >img{
+            display: block;
+            width: 100%;
+        }
+        .jphead{
+            width: 100%;
+            height:1.25rem;
+        }
+
+        .jpimg{
+            width:0.84375rem;
+            height:0.84375rem;
+            background-image: url("sucai/jpimg.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .jplfetimg1,.jplfetimg2,.jprightimg1,.jprightimg2{
+            width:3.484375rem;
+            height: 2.65625rem;
+            background-image: url("sucai/p1.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .jpleft1,.jpleft2{
+            width: 5rem;
+
+        }
+        .fontleft1,.fontleft2,.fontright1,.fontright2{
+            font-size: 100%;
+            color: #000000;
+            padding-top: 0.15rem;
+        }
+
+        .kongtishi{
+            width: 5.4375rem;
+            height:4.203125rem;
+            background-image: url("sucai/quankong.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            left:2.28125rem;
+            top:2.484375rem;
+
+        }
+
+        .listyjf{
+            width: 100%;
+            height:1.8125rem;
+            margin-top: 0.15625rem;
+            background-color: #ffffff;
+        }
+
+        .yjftext{
+            width: 3.3125rem;
+            text-align: center;
+            line-height: 1.25rem;
+            font-size: 100%;
+            color: #e60012;
+            border-left: 0.03125rem solid #efefef;
+            height: 1.25rem;
+        }
+        .typeimg{
+            width: 1.21875rem;
+            height: 1.21875rem;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-left: 0.984375rem;
+        }
+
+        .typeimg+div{
+            color: #898989;
+            font-size: 100%;
+            margin-left: 0.3125rem;
+        }
+
+        .buzutip{
+            width:6.28125rem;
+            height: 4.734375rem;
+            background-color: #fff;
+            border-radius: 0.3rem;
+            position: fixed;
+            top: 4.53125rem;
+            left:1.859375rem;
+        }
+
+        .jfshul_fs,.yiyouj_fs{
+            font-size: 125%;
+            color: #898989;
+            font-weight: bold;
+            text-align: center;
+        }
+        .jfshul_fs{
+            margin-top:1.09375rem;
+        }
+        .yiyouj_fs{
+            padding-top: 0.1rem;
+        }
+
+        .jfshul_fssucess,.yiyouj_fssucess{
+            font-size: 125%;
+            color: #898989;
+            font-weight: bold;
+            text-align: center;
+        }
+        .jfshul_fssucess{
+            margin-top:1.09375rem;
+        }
+        .yiyouj_fssucess{
+            padding-top: 0.1rem;
+        }
+        .jfbuzu_btnsucess{
+            width: 3rem;
+            height: 0.96875rem;
+            background-color: #eb122c;
+            line-height: 0.96875rem;
+            font-size: 125%;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 0.2rem;
+            position: absolute;
+            left: 1.640625rem;
+            bottom:0.65625rem;
+        }
+        .jfbuzu_btn{
+            width: 3rem;
+            height: 0.96875rem;
+            background-color: #eb122c;
+            line-height: 0.96875rem;
+            font-size: 125%;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 0.2rem;
+            position: absolute;
+            left: 1.640625rem;
+            bottom:0.65625rem;
+        }
+
+        .exchange1{
+            width:7.375rem;
+            border-radius: 0.3rem;
+            background-color: #fff;
+            height:5.65625rem;
+            position: absolute;
+            left: 1.3125rem;
+            top:4.34375rem;
+        }
+
+        .exchangeimg{
+            width: 3.484375rem;
+            height: 2.65625rem;
+            background-image: url(sucai/p1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .exfontt1,.exfontt2{
+            font-size: 125%;
+            text-align: center;
+
+        }
+
+        .exfontt1{
+            color: #333;
+        }
+
+        .exfontt2{
+            color: #eb122c;
+            line-height: 1.5;
+        }
+
+        .bntexcange{
+            width: 100%;
+            height: 1.5625rem;
+            border-top: 1px solid #f0f0f0;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .bntexcange>div{
+            line-height: 1.5625rem;
+        }
+
+        .Tcss_window_fs{
+            height: 100%;
+            width: 100%;
+            position:absolute;
+            top: 0px;
+            overflow:hidden;
+            display: none;
+            left: 0;
+            -webkit-backface-visibility:hidden;
+
+            -webkit-box-orient:vertical;
+            z-index: 9999999;
+            background:
+                    -webkit-gradient(radial, 512 389, 0, 512 389, 500,
+                    from(rgba(0,0,0,.2)), to(rgba(0,0,0,.5)));
+            background-color: rgba(0,0,0,.5); , color-stop(100%, #C2C2C2)
+
+        }
+    </style>
+    <div class="container bx bxv">
+        <div class="headtab bx bxh">
+            <div class="h1 tb tab1 borboxsize" data-id="1">领券</div>
+            <div class="h1 tb tab2 borboxsize selected" data-id="2">积分商城</div>
+            <div class="h1 tb tab3 borboxsize" data-id="3">赢积分</div>
+        </div>
+        <div class="bxf1 tabshow w1 tabshow1 bx bxv scroll" style="display: none;background-color: #EFEFEF;">
+            <div class="kongtishi"></div>
+        </div>
+        <div class="bxf1 tabshow w1 tabshow2 bx bxv" style="display: -webkit-box;">
+            <div class="subtab bx bxh">
+                <div class="bxf1 h1 subtt subselect">积分抽奖</div>
+                <div class="bxf1 h1 subtt">积分兑换</div>
+            </div>
+            <div class="bnnersy" style="">
+                <!--<img src="sucai/banner.jpg" alt="">-->
+            </div>
+            <div class="w1" style="height:0.125rem;background-color: #f3f3f3;"></div>
+            <div class="jphead bx bxh bxc borboxsize">
+                <div class="jpimg"></div>
+                <div style="padding-left: 0.28125rem;font-size: 125%;color:#000000;">奖品区</div>
+            </div>
+            <div class="w1" style="height:0.125rem;background-color: #f3f3f3;"></div>
+            <div class="w1 bx bxv bxf1 scroll gundongquyu">
+                <!--<div class="borboxsize bx bxh w1" style="height:5.203125rem;border-bottom:0.0625rem solid #f3f3f3;">-->
+                <!--<div class="jpleft1 bxf1 w1 borboxsize bx bxv bxc" style="border-right:0.0625rem solid #f3f3f3;">-->
+                <!--<div class="jplfetimg1"></div>-->
+                <!--<div class="fontleft1">奖品名称</div>-->
+                <!--<div class="fontleft1" style="color:#c60012">奖品积分</div>-->
+                <!--</div>-->
+                <!--<div class="jpleft2 bxf1 w1 bx bxv bxc borboxsize">-->
+                <!--<div class="jplfetimg2"></div>-->
+                <!--<div class="fontleft2">奖品名称</div>-->
+                <!--<div class="fontleft2" style="color:#c60012">奖品积分</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="w1 bx bxh borboxsize" style="height:5.203125rem;border-bottom:0.0625rem solid #f3f3f3;">-->
+                <!--<div class="jpright1 bxf1 w1 borboxsize bx bxv bxc" style="border-right:0.0625rem solid #f3f3f3;">-->
+                <!--<div class="jprightimg1"></div>-->
+                <!--<div class="fontright1">奖品名称</div>-->
+                <!--<div class="fontright1" style="color:#c60012">奖品积分</div>-->
+                <!--</div>-->
+                <!--<div class="jpright2 bxf1 w1 borboxsize bx bxv bxc">-->
+                <!--<div class="jprightimg2"></div>-->
+                <!--<div class="fontright2">奖品名称</div>-->
+                <!--<div class="fontright2" style="color:#c60012">奖品积分</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="w1 bx bxh borboxsize" style="height:5.203125rem;border-bottom:0.0625rem solid #f3f3f3;">-->
+                <!--<div class="jpright1 bxf1 w1 borboxsize bx bxv bxc" style="border-right:0.0625rem solid #f3f3f3;">-->
+                <!--<div class="jprightimg1"></div>-->
+                <!--<div class="fontright1">奖品名称</div>-->
+                <!--<div class="fontright1" style="color:#c60012">奖品积分</div>-->
+                <!--</div>-->
+                <!--<div class="jpright2 bxf1 w1 borboxsize bx bxv bxc">-->
+                <!--<div class="jprightimg2"></div>-->
+                <!--<div class="fontright2">奖品名称</div>-->
+                <!--<div class="fontright2" style="color:#c60012">奖品积分</div>-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="bxf1 tabshow w1 tabshow3 bx bxv scroll" style="display:none;background-color: #EFEFEF;">
+            <!--<div class="w1" style="height:0.15625rem;background-color: #f3f3f3;"></div>-->
+            <!--<div class="listyjf bx bxc bxh">-->
+            <!--<div class="bxf1 h1 bx bxh" style="-webkit-box-align: center;">-->
+            <!--<div class="typeimg" style="background-image: url('./sucai/b1.png')"></div>-->
+            <!--<div>完善店铺信息</div>-->
+            <!--</div>-->
+            <!--<div class="yjftext fontall borboxsize">15积分</div>-->
+            <!--</div>-->
+            <!--<div class="listyjf bx bxc bxh">-->
+            <!--<div class="bxf1 h1 bx bxh" style="-webkit-box-align: center;">-->
+            <!--<div class="typeimg" style="background-image: url('./sucai/b2.png')"></div>-->
+            <!--<div>一箱一码</div>-->
+            <!--</div>-->
+            <!--<div class="yjftext fontall borboxsize">15积分</div>-->
+            <!--</div>-->
+            <!--<div class="listyjf bx bxc bxh">-->
+            <!--<div class="bxf1 h1 bx bxh" style="-webkit-box-align: center;">-->
+            <!--<div class="typeimg" style="background-image: url('./sucai/b3.png')"></div>-->
+            <!--<div>问卷调查 (敬请期待！)</div>-->
+            <!--</div>-->
+            <!--<div class="yjftext fontall borboxsize">15积分</div>-->
+            <!--</div>-->
+            <!--<div class="w1" style="height:0.15625rem;background-color: #f3f3f3;"></div>-->
+        </div>
+    </div>
+    <!--积分不足提示-->
+    <div class="jfbuzu Tcss_window_fs" style="display: none;-webkit-box-align:center;">
+        <div class="buzutip bx bxv">
+            <div class="jfshul_fs"></div>
+            <div class="yiyouj_fs"></div>
+            <div class="jfbuzu_btn">确定</div>
+        </div>
+    </div>
+    <!--产品兑换提示-->
+    <div class="cpexchange Tcss_window_fs" style="display: none;-webkit-box-align:center;">
+        <div class="exchange1 bx bxv" style="-webkit-box-align:center;">
+            <div class="exchangeimg"></div>
+            <div class="exfontt1"></div>
+            <div class="exfontt2"></div>
+            <div class="bntexcange bx bxh borboxsize">
+                <div class="borboxsize" style="width: 50%;height: 100%;
+            text-align: center;font-size: 125%;border-right: 1px solid #f0f0f0;
+            color: #898989;font-weight: bold;">再看看</div>
+                <div style="width: 50%;height: 100%;text-align: center;font-size: 125%;color: #eb122c;font-weight: bold;">立即兑换</div>
+            </div>
+        </div>
+    </div>
+    <!--兑换成功-->
+    <div class="jfbuzusucess Tcss_window_fs" style="display:none;-webkit-box-align:center;">
+        <div class="buzutip bx bxv">
+            <div class="jfshul_fssucess">兑换成功</div>
+            <div class="yiyouj_fssucess">请点击确定立即领取奖品</div>
+            <div class="jfbuzu_btnsucess">确定</div>
+        </div>
+    </div>
+
+    </div>
+</script>
+</body>
+<script type="text/javascript" src="util/zepto.min.js"></script>
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="util/comm.js?v='+version+'"><\/script>')
+</script>
+<script type="text/javascript" src="util/MD5.js"></script>
+<script type="text/javascript" src="util/cunxhuinfo.js"></script>
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="util/sq.js?v='+version+'"><\/script>')
+</script>
+<script type="text/javascript">
+    document.write("<script type='text/javascript' src='yemianjs/index_ss.js?v=" + version + "'><\/script>")
+</script>
+</html>
